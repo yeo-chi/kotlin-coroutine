@@ -8,10 +8,10 @@ fun main(args: Array<String>) {
     coroutineRunBlockingAddLaunchRepeat()
 }
 
+// runBlocking 은 메인스레드를 block 후 실행한다.
 fun coroutineRunBlocking() = runBlocking {
     println("[${currentThread().name}] 실행")
 }
-
 
 // launch 를 통해 runBlocking 으로 만든 코루틴안에서 새로운 코루틴을 생성 할 수 있다.
 fun coroutineRunBlockingAddLaunch() = runBlocking {

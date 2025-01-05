@@ -125,4 +125,3 @@ fun processCancelByCoroutineScopeIsActive() = runBlocking {
 
     whileJob.cancel()
 }
-
